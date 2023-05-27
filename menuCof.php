@@ -47,7 +47,7 @@ include('koneksi1.php');
           echo date("l, d M Y")  ?>
         </p>
         <div>
-          <a class="cancel" href="kasir.html">
+          <a class="cancel" href="kasir.php">
             Logout
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="logout">
               <rect width="256" height="256" fill="none" />

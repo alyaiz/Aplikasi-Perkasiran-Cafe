@@ -56,7 +56,7 @@ session_start();
     </div>
   </div>
   <div class="back">
-    <a href="index.html">back</a>
+    <a href="index.php">back</a>
   </div>
 </body>
 
