@@ -108,7 +108,7 @@ img {
   justify-content: end;
 }
 
-.login-box form .button-box button {
+button {
   padding: 10px 20px;
   background: #ffffff;
   color: #916be1;
@@ -119,6 +119,7 @@ img {
   text-transform: uppercase;
   transition: 0.5s;
   margin-top: 10px;
+  margin-left: 250px;
   cursor: pointer;
 }
 

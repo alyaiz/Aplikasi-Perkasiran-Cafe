@@ -3,6 +3,7 @@ session_start();
 include('koneksi1.php');
 ?>
 
+<!DOCTYPE html>
 <html lang="id_menu">
 
 <head>
@@ -26,7 +27,7 @@ include('koneksi1.php');
     ?>
   </section>
 
-  <section class="navbar-top">
+  <section>
     <?php
     $sql = mysqli_query($conn, 'SELECT * FROM transaksi_penjualan');
     while ($data = mysqli_fetch_array($sql)) {
@@ -47,7 +48,7 @@ include('koneksi1.php');
           echo date("l, d M Y")  ?>
         </p>
         <div>
-          <a class="cancel" href="kasir.php">
+          <a class="cancel" href="logoutkasir.php">
             Logout
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="logout">
               <rect width="256" height="256" fill="none" />
@@ -107,27 +108,29 @@ include('koneksi1.php');
         </div>
       </div>
     </div>
-
-
   </section>
 
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function(e) {
-        e.preventDefault();
+  <section>
+    <?php $total_bayar = 0;
+    include('keranjang.php'); ?>
 
-        const targetElement = document.querySelector(
-          this.getAttribute("href")
-        );
-        const offsetTop = targetElement.offsetTop - 150; // Atur offset top sesuai kebutuhan
-
-        window.scrollTo({
-          top: offsetTop,
-          behavior: "smooth", // Animasi scroll halus
-        });
-      });
-    });
-  </script>
+    <div class="footer">
+      <div class="buttons">
+        <a href="lihatPesan.php">Lihat Pesanan</a>
+        <a href="checkout.php">Konfirmasi Pesanan
+        </a>
+      </div>
+      <div class="tomkan">
+        <a href="laporan.php"><button class="btn btn-danger">Lihat Laporan</button></a>
+        <div class="tampil">
+          <h3>Total Pembayaran</h3>
+          <h2>
+            Rp <?php echo number_format((string)($total_bayar), 0, ".", "."); ?>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>

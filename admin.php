@@ -12,7 +12,7 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/admin.css" />
+  <link rel="stylesheet" href="css/admin.css">
 </head>
 
 <body>
@@ -34,24 +34,26 @@ session_start();
             <input type="password" name="password" required="" />
             <label>password</label>
           </div>
-          <button type="submit" value="Login" name="login">Login</button>
-          <div class="coba">
-            <?php
-            if (isset($_POST['login'])) {
-              $sql = mysqli_query($conn, "SELECT * FROM user WHERE username='$_POST[username]' AND password='$_POST[password]'");
-              $cek = mysqli_num_rows($sql);
-              if ($cek > 0) {
-                $_SESSION['username'] = $_POST['username'];
-                echo "<meta http-equiv=refresh content=0;URL='homeadmin.php'>";
-              } else {
-                echo "<p aglin=center><b> username dan password salah! </b></p>";
-                echo "<meta http-equiv=refresh content=2;URL='admin.php'>";
-              }
-            }
-            ?>
+          <div class="button-box">
+            <button type="submit" value="Login" name="login">Login</button>
           </div>
+          <?php
+          if (isset($_POST['login'])) {
+            $sql = mysqli_query($conn, "SELECT * FROM user WHERE username='$_POST[username]' AND password='$_POST[password]'");
+            $cek = mysqli_num_rows($sql);
+            if ($cek > 0) {
+              $_SESSION['username'] = $_POST['username'];
+              echo "<meta http-equiv=refresh content=0;URL='homeadmin.php'>";
+            } else {
+              echo "<p aglin=center><b> username dan password salah! </b></p>";
+              echo "<meta http-equiv=refresh content=2;URL='admin.php'>";
+            }
+          }
+          ?>
       </div>
+      </form>
     </div>
+  </div>
   </div>
   <div class="back">
     <a href="index.php">back</a>
