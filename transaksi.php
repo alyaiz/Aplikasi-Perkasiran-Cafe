@@ -49,7 +49,7 @@
     <section>
       <h1>Data Transaksi</h1>
       <div>
-        <table style="width:80%" ;>
+        <table style="width:80%; text-align:center">
           <tr>
             <th>No</th>
             <th>ID Transaksi</th>
@@ -63,7 +63,7 @@
               <td><?php echo $i; ?></td>
               <td><?php echo $row['ID_Transaksi'] ?></td>
               <td><?php echo $row['Nama_Barang'] ?></td>
-              <td style="text-align:right;"><?php echo number_format((string)$row['Harga'], 0, ",", ".") ?></td>
+              <td><?php echo number_format((string)$row['Harga'], 0, ",", ".") ?></td>
               <td>
                 <a href="edit_transaksi.php?ID_Transaksi=<?php echo $row['ID_Transaksi'] ?>"><i style="color: #70C762;" class="fas fa-pen" id="open"></i></a> ||
                 <a href="hapus_transaksi.php?ID_Transaksi=<?php echo $row['ID_Transaksi'] ?>"><i style="color: #F65E5E;" class="fas fa-trash" id="open"></i></a>

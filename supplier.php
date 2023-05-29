@@ -49,7 +49,7 @@
     <section>
       <h1>Data Supplier</h1>
       <div>
-        <table style="width: 81%;">
+        <table style="width: 80%; text-align:center">
           <tr>
             <th>No</th>
             <th>ID Supplier</th>
@@ -66,7 +66,7 @@
               <td><?php echo $row['Nama_Supplier'] ?></td>
               <td><?php echo $row['Alamat'] ?></td>
               <td><?php echo $row['Keterangan_Supplier'] ?></td>
-              <td style="text-align:center;">
+              <td>
                 <a href="edit_supplier.php?ID_Supplier=<?php echo $row['ID_Supplier'] ?>"><i style="color: #70C762;" class="fas fa-pen" id="open"></i></a> ||
                 <a href="hapus_supplier.php?ID_Supplier=<?php echo $row['ID_Supplier'] ?>"><i style="color: #F65E5E;" class="fas fa-trash" id="open"></i></a>
               </td>

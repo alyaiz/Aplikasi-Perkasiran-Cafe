@@ -89,15 +89,15 @@ CREATE TABLE `supplier` (
 --
 
 INSERT INTO `supplier` (`ID_Supplier`, `Nama_Supplier`, `Alamat`, `Keterangan_Supplier`) VALUES
-(109874, 'Salma', 'Jl. Rongga 09', 'Supplier Buah'),
-(254698, 'Rama', 'Jl. Jeruk 90', 'Supplier Daging Sapi'),
-(278563, 'Erick', 'Jl. Medan 12', 'Supplier Ikan Laut'),
-(289714, 'Putra', 'Jl. Sulawesi 34', 'Supplier Kopi Arabica'),
-(378201, 'Aisyiah', 'Jl. Mawar 01', 'Supplier Kopi Robusta'),
-(567812, 'Yosia', 'Jl. Gajah 54', 'Supplier Teh Hijau'),
-(768450, 'Akmal', 'Jl. Selang Timur 32', 'Supplier Sayur'),
-(789614, 'Sintya', 'Jl. Buaya 43', 'Supplier Ice Cube'),
-(876532, 'Dicky ', 'Jl. Serigala 34', 'Supplier Daging Ayam\r\n');
+(109874, 'Alya', 'Jl. Rongga 09', 'Supplier Buah'),
+(254698, 'Izzah', 'Jl. Jeruk 90', 'Supplier Daging Sapi'),
+(278563, 'Zalfa', 'Jl. Medan 12', 'Supplier Ikan Laut'),
+(289714, 'Muhammad', 'Jl. Sulawesi 34', 'Supplier Kopi Arabica'),
+(378201, 'Lucky', 'Jl. Mawar 01', 'Supplier Kopi Robusta'),
+(567812, 'Kenandra', 'Jl. Gajah 54', 'Supplier Teh Hijau'),
+(768450, 'Najwa', 'Jl. Selang Timur 32', 'Supplier Sayur'),
+(789614, 'Lala', 'Jl. Buaya 43', 'Supplier Ice Cube'),
+(876532, 'Alex ', 'Jl. Serigala 34', 'Supplier Daging Ayam\r\n');
 
 -- --------------------------------------------------------
 
@@ -145,7 +145,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `nama`) VALUES
-(1, 'admin', 'admin123', 'dicky');
+(1, 'admin', 'admin1', 'zalfa');
 
 --
 -- Indexes for dumped tables

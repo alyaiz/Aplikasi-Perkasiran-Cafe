@@ -50,7 +50,7 @@
     <section>
       <h1>Data Barang</h1>
       <div>
-        <table style="width: 80%;">
+        <table style="width: 80%; text-align:center">
           <tr>
             <th>No</th>
             <th>ID Barang</th>
@@ -67,8 +67,8 @@
               <td><?php echo $row['ID_Barang'] ?></td>
               <td><?php echo $row['Nama_Barang'] ?></td>
               <td><?php echo $row['Jumlah_Barang'] ?></td>
-              <td style="text-align:right;"><?php echo number_format((string)$row['Harga_Barang'], 0, ",", ".") ?></td>
-              <td style="text-align:center;">
+              <td><?php echo number_format((string)$row['Harga_Barang'], 0, ",", ".") ?></td>
+              <td>
                 <a href="edit_barang.php?ID_Barang=<?php echo $row['ID_Barang'] ?>"><i style="color: #70C762;" class="fas fa-pen" id="open"></i></a> ||
                 <a href="hapus_barang.php?ID_Barang=<?php echo $row['ID_Barang'] ?>"><i style="color: #F65E5E;" class="fas fa-trash" id="open"></i></a>
               </td>
