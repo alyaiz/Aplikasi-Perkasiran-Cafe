@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tambah</title>
+    <title>Data Barang</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
       rel="stylesheet"
@@ -17,8 +17,8 @@
       <input type="checkbox" id="check" />
       <label for="check">
         <i class="fas fa-bars" id="btn"></i>
-        <i class="fa fa-arrow-right" id="open"></i>
       </label>
+
       <div class="sidebar">
         <div class="top">CAFE CASH</div>
         <ul>
@@ -29,7 +29,9 @@
             >
           </li>
           <li>
-            <a href="barang.html"
+            <a
+              style="background: #ffffff; color: rgb(0, 0, 0)"
+              href="barang.html"
               ><i class="fas fa-dolly-flatbed icon"></i>
               <span class="text nav-text">Barang</span></a
             >
@@ -47,15 +49,13 @@
             >
           </li>
           <li>
-            <a
-              style="background: #ffffff; color: rgb(0, 0, 0)"
-              href="tambah.html"
-              ><i class="fas fa-plus"></i
+            <a href="tambah.html"
+              ><i class="fas fa-plus icon"></i
               ><span class="text nav-text">Tambah</span></a
             >
           </li>
           <li class="bot">
-            <a style="background-color: #e5bcef" href="admin.html"
+            <a style="background-color: #916be1" href="admin.html"
               ><i class="fas fa-sign-out-alt icon"></i
               ><span class="text nav-text">Logout</span></a
             >
@@ -63,14 +63,52 @@
         </ul>
       </div>
       <section>
-        <br /><br /><br /><br /><br /><br />
-        <table>
-          <tr>
-            <a href="tambah_barang.html"><h2>Tambah Data Barang</h2></a>
-            <a href="tambah_supplier.html"><h2>Tambah Data Supplier</h2></a>
-            <a href="tambah_transaksi.html"><h2>Tambah Data Transaksi</h2></a>
-          </tr>
-        </table>
+        <h1>Data Barang</h1>
+        <div>
+          <table style="width: 80%; text-align: center">
+            <tr>
+              <th>No</th>
+              <th>ID Barang</th>
+              <th>Nama Barang</th>
+              <th>Jumlah Stock</th>
+              <th>Harga</th>
+              <th>Edit</th>
+            </tr>
+
+            <tr class="q">
+              <td>1</td>
+              <td>1001</td>
+              <td>Mie Ayam</td>
+              <td>20</td>
+              <td>50.000</td>
+              <td>
+                <a href="edit_Barang.html"
+                  ><i style="color: #70c762" class="fas fa-pen" id="open"></i
+                ></a>
+                ||
+                <a href="hapus_barang.html"
+                  ><i style="color: #f65e5e" class="fas fa-trash" id="open"></i
+                ></a>
+              </td>
+            </tr>
+            <tr class="q">
+              <td>2</td>
+              <td>1002</td>
+              <td>Pizza</td>
+              <td>20</td>
+              <td>50.000</td>
+              <td style="text-align: center">
+                <a href="edit_Barang.html"
+                  ><i style="color: #70c762" class="fas fa-pen" id="open"></i
+                ></a>
+                ||
+                <a href="hapus_barang.html"
+                  ><i style="color: #f65e5e" class="fas fa-trash" id="open"></i
+                ></a>
+              </td>
+            </tr>
+          </table>
+        </div>
       </section>
     </main>
   </body>

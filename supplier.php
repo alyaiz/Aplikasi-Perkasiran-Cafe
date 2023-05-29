@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transaksi</title>
+    <title>Supplier</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
       rel="stylesheet"
@@ -35,15 +35,15 @@
             >
           </li>
           <li>
-            <a href="supplier.html"
+            <a
+              style="background: #ffffff; color: rgb(0, 0, 0)"
+              href="supplier.html"
               ><i class="fas fa-truck icon"></i
               ><span class="text nav-text">Supplier</span></a
             >
           </li>
           <li>
-            <a
-              style="background: #ffffff; color: rgb(0, 0, 0)"
-              href="transaksi.html"
+            <a href="transaksi.html"
               ><i class="fas fa-donate icon"></i
               ><span class="text nav-text">Transaksi</span></a
             >
@@ -55,7 +55,7 @@
             >
           </li>
           <li class="bot">
-            <a style="background-color: #f65e5e" href="admin.html"
+            <a style="background-color: #916be1" href="admin.html"
               ><i class="fas fa-sign-out-alt icon"></i
               ><span class="text nav-text">Logout</span></a
             >
@@ -63,42 +63,45 @@
         </ul>
       </div>
       <section>
-        <h1>Data Transaksi</h1>
+        <h1>Data Supplier</h1>
         <div>
           <table style="width: 80%; text-align: center">
             <tr>
               <th>No</th>
-              <th>ID Transaksi</th>
-              <th>Nama Barang</th>
-              <th>Harga</th>
+              <th>ID Supplier</th>
+              <th>Nama Supplier</th>
+              <th>Alamat</th>
+              <th>Keterangan Supplier</th>
               <th>Edit</th>
             </tr>
             <tr class="q">
               <td>1</td>
-              <td>2001547</td>
-              <td>Mie Ayam</td>
-              <td>60.000</td>
-              <td>
-                <a href="edit_transaksi.html"
+              <td>1009</td>
+              <td>Sinta</td>
+              <td>Jl. Mintaraga</td>
+              <td>Teh Hijau</td>
+              <td style="text-align: center">
+                <a href="edit_supplier.html"
                   ><i style="color: #70c762" class="fas fa-pen" id="open"></i
                 ></a>
                 ||
-                <a href="hapus_transaksi.html"
+                <a href="hapus_supplier.html"
                   ><i style="color: #f65e5e" class="fas fa-trash" id="open"></i
                 ></a>
               </td>
             </tr>
             <tr class="q">
               <td>2</td>
-              <td>2001548</td>
-              <td>Pizza</td>
-              <td>100.000</td>
-              <td>
-                <a href="edit_transaksi.html"
+              <td>1010</td>
+              <td>Dhevi</td>
+              <td>Jl. Kematian</td>
+              <td>Bawang Bombay</td>
+              <td style="text-align: center">
+                <a href="edit_supplier.html"
                   ><i style="color: #70c762" class="fas fa-pen" id="open"></i
                 ></a>
                 ||
-                <a href="hapus_transaksi.html"
+                <a href="hapus_supplier.html"
                   ><i style="color: #f65e5e" class="fas fa-trash" id="open"></i
                 ></a>
               </td>

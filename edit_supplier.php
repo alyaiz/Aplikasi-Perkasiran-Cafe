@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edit Transaksi</title>
+    <title>Edit Supplier</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="css/menuadmin.css" />
     <link
@@ -28,62 +28,62 @@
             >
           </li>
           <li>
-            <a href="supplier.html"><i class="fas fa-truck"></i> Supplier</a>
+            <a style="background-color: #1dff1d" href="supplier.html"
+              ><i class="fas fa-truck"></i> Supplier</a
+            >
           </li>
           <li>
-            <a style="background-color: #1dff1d" href="transaksi.html"
-              ><i class="fas fa-donate"></i> Transaksi</a
-            >
+            <a href="transaksi.html"><i class="fas fa-donate"></i> Transaksi</a>
           </li>
           <li>
             <a href="tambah.html"><i class="fas fa-edit"></i> Tambah</a>
           </li>
           <li>
-            <a style="background-color: red" href="admin.html"
+            <a style="background-color: #916be1" href="admin.html"
               ><i class="fas fa-sign-out-alt"></i> Logout</a
             >
           </li>
         </ul>
       </div>
       <section>
-        <h1>Edit data transaksi</h1>
+        <h1>Edit data supplier</h1>
         <form action="" method="POST">
           <table>
-            <tr>
-              <td>ID Transaksi</td>
-              <td>:</td>
-              <td>
-                <input
-                  type="text"
-                  name="ID Transaksi"
-                  placeholder="ID Transaksi"
-                  value="ID Transaksi"
-                  required
-                />
-              </td>
-            </tr>
             <tr>
               <td>Nama Barang</td>
               <td>:</td>
               <td>
                 <input
                   type="text"
-                  name="Nama Barang"
+                  name="Nama_Supplier"
                   placeholder="Nama Barang"
-                  value="Nama Barang"
+                  value="Nama_Supplier"
                   required
                 />
               </td>
             </tr>
             <tr>
-              <td>Harga</td>
+              <td>Jumlah Barang</td>
               <td>:</td>
               <td>
                 <input
                   type="text"
-                  name="Harga"
-                  placeholder="Harga"
-                  value="Harga"
+                  name="Alamat"
+                  placeholder="Alamat"
+                  value="Alamat"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Harga Barang</td>
+              <td>:</td>
+              <td>
+                <input
+                  type="text"
+                  name="Keterangan_Supplier"
+                  placeholder="Keterangan Supplier"
+                  value="Keterangan_Supplier"
                   required
                 />
               </td>

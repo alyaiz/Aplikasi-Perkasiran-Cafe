@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Barang</title>
+    <title>Transaksi</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
       rel="stylesheet"
@@ -17,8 +17,8 @@
       <input type="checkbox" id="check" />
       <label for="check">
         <i class="fas fa-bars" id="btn"></i>
+        <i class="fa fa-arrow-right" id="open"></i>
       </label>
-
       <div class="sidebar">
         <div class="top">CAFE CASH</div>
         <ul>
@@ -29,9 +29,7 @@
             >
           </li>
           <li>
-            <a
-              style="background: #ffffff; color: rgb(0, 0, 0)"
-              href="barang.html"
+            <a href="barang.html"
               ><i class="fas fa-dolly-flatbed icon"></i>
               <span class="text nav-text">Barang</span></a
             >
@@ -43,7 +41,9 @@
             >
           </li>
           <li>
-            <a href="transaksi.html"
+            <a
+              style="background: #ffffff; color: rgb(0, 0, 0)"
+              href="transaksi.html"
               ><i class="fas fa-donate icon"></i
               ><span class="text nav-text">Transaksi</span></a
             >
@@ -55,7 +55,7 @@
             >
           </li>
           <li class="bot">
-            <a style="background-color: #f65e5e" href="admin.html"
+            <a style="background-color: #916be1" href="admin.html"
               ><i class="fas fa-sign-out-alt icon"></i
               ><span class="text nav-text">Logout</span></a
             >
@@ -63,46 +63,42 @@
         </ul>
       </div>
       <section>
-        <h1>Data Barang</h1>
+        <h1>Data Transaksi</h1>
         <div>
           <table style="width: 80%; text-align: center">
             <tr>
               <th>No</th>
-              <th>ID Barang</th>
+              <th>ID Transaksi</th>
               <th>Nama Barang</th>
-              <th>Jumlah Stock</th>
               <th>Harga</th>
               <th>Edit</th>
             </tr>
-
             <tr class="q">
               <td>1</td>
-              <td>1001</td>
+              <td>2001547</td>
               <td>Mie Ayam</td>
-              <td>20</td>
-              <td>50.000</td>
+              <td>60.000</td>
               <td>
-                <a href="edit_Barang.html"
+                <a href="edit_transaksi.html"
                   ><i style="color: #70c762" class="fas fa-pen" id="open"></i
                 ></a>
                 ||
-                <a href="hapus_barang.html"
+                <a href="hapus_transaksi.html"
                   ><i style="color: #f65e5e" class="fas fa-trash" id="open"></i
                 ></a>
               </td>
             </tr>
             <tr class="q">
               <td>2</td>
-              <td>1002</td>
+              <td>2001548</td>
               <td>Pizza</td>
-              <td>20</td>
-              <td>50.000</td>
-              <td style="text-align: center">
-                <a href="edit_Barang.html"
+              <td>100.000</td>
+              <td>
+                <a href="edit_transaksi.html"
                   ><i style="color: #70c762" class="fas fa-pen" id="open"></i
                 ></a>
                 ||
-                <a href="hapus_barang.html"
+                <a href="hapus_transaksi.html"
                   ><i style="color: #f65e5e" class="fas fa-trash" id="open"></i
                 ></a>
               </td>

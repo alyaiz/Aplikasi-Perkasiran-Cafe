@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edit Supplier</title>
+    <title>Edit Barang</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="css/menuadmin.css" />
     <link
@@ -23,14 +23,12 @@
         <div class="top">CAFE CASH</div>
         <ul>
           <li>
-            <a href="barang.html"
+            <a style="background-color: #1dff1d" href="barang.html"
               ><i class="fas fa-dolly-flatbed"></i> Barang</a
             >
           </li>
           <li>
-            <a style="background-color: #1dff1d" href="supplier.html"
-              ><i class="fas fa-truck"></i> Supplier</a
-            >
+            <a href="supplier.html"><i class="fas fa-truck"></i> Supplier</a>
           </li>
           <li>
             <a href="transaksi.html"><i class="fas fa-donate"></i> Transaksi</a>
@@ -39,14 +37,14 @@
             <a href="tambah.html"><i class="fas fa-edit"></i> Tambah</a>
           </li>
           <li>
-            <a style="background-color: red" href="admin.html"
+            <a style="background-color: #916be1" href="admin.html"
               ><i class="fas fa-sign-out-alt"></i> Logout</a
             >
           </li>
         </ul>
       </div>
       <section>
-        <h1>Edit data supplier</h1>
+        <h1>Edit data barang</h1>
         <form action="" method="POST">
           <table>
             <tr>
@@ -55,9 +53,9 @@
               <td>
                 <input
                   type="text"
-                  name="Nama_Supplier"
+                  name="Nama_Barang"
                   placeholder="Nama Barang"
-                  value="Nama_Supplier"
+                  value="Nama Barang"
                   required
                 />
               </td>
@@ -68,9 +66,9 @@
               <td>
                 <input
                   type="text"
-                  name="Alamat"
-                  placeholder="Alamat"
-                  value="Alamat"
+                  name="Jumlah_Barang"
+                  placeholder="Jumlah Barang"
+                  value="Jumlah Barang"
                   required
                 />
               </td>
@@ -81,9 +79,9 @@
               <td>
                 <input
                   type="text"
-                  name="Keterangan_Supplier"
-                  placeholder="Keterangan Supplier"
-                  value="Keterangan_Supplier"
+                  name="Harga_Barang"
+                  placeholder="Harga Barang"
+                  value="Harga Barang"
                   required
                 />
               </td>

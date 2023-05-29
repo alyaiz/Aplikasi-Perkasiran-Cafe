@@ -55,11 +55,7 @@
             >
           </li>
           <li class="bot">
-            <a
-              style="background-color: #f65e5e"
-              id="log"
-              style="background-color: red"
-              href="admin.html"
+            <a style="background-color: #916be1" id="log" href="admin.html"
               ><i class="fas fa-sign-out-alt"></i>
               <span class="text nav-text">Logout</span></a
             >
