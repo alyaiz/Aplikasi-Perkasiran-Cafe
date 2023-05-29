@@ -87,7 +87,7 @@
           if ($insert) {
             echo "Data berhasil disimpan!";
           } else {
-            echo "gagal disimpan!";
+            echo "Data gagal disimpan!";
           }
         }
         ?>

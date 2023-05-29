@@ -80,9 +80,9 @@
         if (isset($_POST['simpan'])) {
           $insert = mysqli_query($conn, "INSERT INTO transaksi  VALUES ('" . $_POST['ID_Transaksi'] . "', '" . $_POST['Nama_Barang'] . "', '" . $_POST['Harga'] . "')");
           if ($insert) {
-            echo "berhasil disimpan!";
+            echo "Data berhasil disimpan!";
           } else {
-            echo "gagal disimpan!";
+            echo "Data gagal disimpan!";
           }
         }
         ?>

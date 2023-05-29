@@ -69,7 +69,7 @@ CREATE TABLE `kasir` (
 --
 
 INSERT INTO `kasir` (`id`, `username`, `password`, `nama`) VALUES
-(1, 'kasir', 'kasir1', 'kasir');
+(1, 'kasir', 'kasir1', 'Zalfa');
 
 -- --------------------------------------------------------
 
@@ -145,7 +145,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `nama`) VALUES
-(1, 'admin', 'admin1', 'zalfa');
+(1, 'admin', 'admin1', 'Zalfa');
 
 --
 -- Indexes for dumped tables
