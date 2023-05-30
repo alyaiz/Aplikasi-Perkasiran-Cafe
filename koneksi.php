@@ -1,9 +1,7 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'root', '', 'login');
+$conn = mysqli_connect('localhost', 'root', '', 'cafecash');
 
-if(!$conn){
+if (!$conn) {
     echo 'belum terhubung';
 }
-
-?>

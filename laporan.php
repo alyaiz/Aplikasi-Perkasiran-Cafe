@@ -1,9 +1,9 @@
 <?php
-include('koneksi1.php');
+include('koneksi.php');
 ?>
 
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />

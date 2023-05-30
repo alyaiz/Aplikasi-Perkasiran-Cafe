@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('koneksi1.php');
+include('koneksi.php');
 $total_bayar = 0;
 include('keranjang.php');
 
@@ -16,7 +16,7 @@ if (!isset($_GET['cari'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">

@@ -38,7 +38,7 @@ session_start();
             <button type="submit" value="Login" name="login">Login</button>
           </div>
           <?php
-          if (isset($_POST['login'])) {
+          if (isset($_POST['cafecash'])) {
             $sql = mysqli_query($conn, "SELECT * FROM kasir WHERE username='$_POST[username]' AND password='$_POST[password]'");
 
             $cek = mysqli_num_rows($sql);

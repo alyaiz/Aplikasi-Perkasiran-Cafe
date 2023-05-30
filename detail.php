@@ -1,5 +1,5 @@
 <?php
-include('koneksi1.php');
+include('koneksi.php');
 
 if (!isset($_GET['id_order'])) {
   header('Location: laporan.php');
@@ -7,7 +7,7 @@ if (!isset($_GET['id_order'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />

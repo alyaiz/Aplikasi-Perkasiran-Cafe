@@ -18,7 +18,7 @@ include "koneksi.php";
 
 <body>
   <?php
-  $conn = mysqli_connect("localhost", "root", "", "login");
+  $conn = mysqli_connect("localhost", "root", "", "cafecash");
   $result = mysqli_query($conn, "SELECT * FROM barang");
   ?>
   <main>

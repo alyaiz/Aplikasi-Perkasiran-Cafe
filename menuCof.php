@@ -1,10 +1,10 @@
 <?php
 session_start();
-include('koneksi1.php');
+include('koneksi.php');
 ?>
 
 <!DOCTYPE html>
-<html lang="id_menu">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
