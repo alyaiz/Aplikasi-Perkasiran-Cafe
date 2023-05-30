@@ -28,7 +28,7 @@ session_start();
         <form action="" method="POST">
           <div class="user-box">
             <input type="text" name="username" required="" />
-            <label>username</label>
+            <label>username</label>+
           </div>
           <div class="user-box">
             <input type="password" name="password" required="" />
@@ -38,7 +38,7 @@ session_start();
             <button type="submit" value="Login" name="login">Login</button>
           </div>
           <?php
-          if (isset($_POST['cafecash'])) {
+          if (isset($_POST['login'])) {
             $sql = mysqli_query($conn, "SELECT * FROM kasir WHERE username='$_POST[username]' AND password='$_POST[password]'");
 
             $cek = mysqli_num_rows($sql);
