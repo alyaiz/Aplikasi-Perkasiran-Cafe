@@ -48,16 +48,18 @@
     </div>
     <section>
       <h1>Data Supplier</h1>
-      <div>
+      <div class="table-container">
         <table style="width: 80%; text-align:center">
-          <tr>
-            <th>No</th>
-            <th>ID Supplier</th>
-            <th>Nama Supplier</th>
-            <th>Alamat</th>
-            <th>Keterangan Supplier</th>
-            <th>Edit</th>
-          </tr>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>ID Supplier</th>
+              <th>Nama Supplier</th>
+              <th>Alamat</th>
+              <th>Keterangan Supplier</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
           <?php $i = 1; ?>
           <?php while ($row = mysqli_fetch_assoc($result)) : ?>
             <tr class="q">

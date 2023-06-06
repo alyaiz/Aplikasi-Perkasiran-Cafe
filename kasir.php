@@ -28,7 +28,7 @@ session_start();
         <form action="" method="POST">
           <div class="user-box">
             <input type="text" name="username" required="" />
-            <label>username</label>+
+            <label>username</label>
           </div>
           <div class="user-box">
             <input type="password" name="password" required="" />

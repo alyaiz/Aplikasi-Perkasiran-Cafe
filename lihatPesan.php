@@ -29,15 +29,17 @@ if (!isset($_GET['cari'])) {
 <body>
     <section>
         <?php
+        $id = 2000;
         $sql = mysqli_query($conn, 'SELECT * FROM transaksi_penjualan');
         while ($data = mysqli_fetch_array($sql)) {
             $id = $data['ID_Transaksi'];
         }
+        $id++;
         ?>
         <div class="header">
             <div class="left">
                 <h3 id="1">Order</h3>
-                <h1>#<?php echo $id + 1 ?></h1>
+                <h1>#<?php echo $id ?></h1>
             </div>
             <div class="mid">
                 <h1>Keranjang</h1>

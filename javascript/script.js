@@ -1,13 +1,13 @@
-window.onscroll = function () {
-  myFunction();
-};
-var navbar = document.querySelector(".navbar");
-var sticky = navbar.offsetTop;
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-function myFunction() {
-  if (window.pageYOffset + 20 >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+    const targetElement = document.querySelector(this.getAttribute("href"));
+    const offsetTop = targetElement.offsetTop - 185; // Sesuaikan offset top sesuai kebutuhan
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth", // Animasi scroll halus
+    });
+  });
+});

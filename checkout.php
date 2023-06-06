@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once 'koneksi1.php';
+require_once 'koneksi.php';
 
 if (!isset($_SESSION['keranjang'])) {
     header('Location: menuCof.php');

@@ -27,17 +27,19 @@ include('koneksi.php');
     ?>
   </section>
 
-  <section>
+  <section class="navbar-top">
     <?php
     $sql = mysqli_query($conn, 'SELECT * FROM transaksi_penjualan');
+    $id = 2000;
     while ($data = mysqli_fetch_array($sql)) {
       $id = $data['ID_Transaksi'];
     }
+    $id++;
     ?>
     <div class="header">
       <div class="left">
         <h3 id="1">Order</h3>
-        <h1>#<?php echo $id + 1 ?></h1>
+        <h1>#<?php echo $id ?></h1>
       </div>
       <div class="mid">
         <h1>Menu</h1>
@@ -62,12 +64,12 @@ include('koneksi.php');
     </div>
   </section>
 
-  <section style="margin: 0px 40px;">
+  <section>
     <div class="navbar">
-      <a href="#1">Coffee</a>
-      <a style="font-size: 18px" href="#2">Non-Coffee</a>
-      <a href="#3">Side Dish</a>
-      <a href="#4">Makanan</a>
+      <a href="#coffe">Coffee</a>
+      <a href="#non-coffe">Non-Coffee</a>
+      <a href="#side-dish">Side Dish</a>
+      <a href="#makanan">Makanan</a>
     </div>
     <div class="containerBig">
       <div class="container">
@@ -76,21 +78,20 @@ include('koneksi.php');
           $query = mysqli_query($conn, 'SELECT * FROM menu');
           while ($data = mysqli_fetch_array($query)) {
             if ($data['id_menu'] == 1) {
-              $id_menu = "id = '0'";
-            }
-            if ($data['id_menu'] == 9) {
-              $id_menu = "id = '2'";
-              $br = "<br>";
-            } else if ($data['id_menu'] == 16) {
-              $id_menu = "id = '3'";
+              $id_menu = "coffe";
+            } else if ($data['id_menu'] == 13) {
+              $id_menu = "non-coffe";
             } else if ($data['id_menu'] == 20) {
-              $id_menu = "id = '4'";
+              $id_menu = "side-dish";
+            } else if ($data['id_menu'] == 26) {
+              $id_menu = "makanan";
             }
           ?>
-            <div class="card">
+
+            <div id="<?php echo $id_menu ?>" class="card">
               <?php echo "<img src='img/" . $data['gambar'] . "'style='width:100%;  height:45%; object-fit: cover; object-position: 100% 20%'>" ?>
               <div class="anu1">
-                <h2 <?php echo $id_menu ?>><b> <?php echo $data['nama'] ?> </b></h2>
+                <h2><b> <?php echo $data['nama'] ?> </b></h2>
                 <div class="anu">
                   <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                     <input type="hidden" id_menu="id_produk" name="id_produk" value="<?php echo $data['id_menu'] ?>"></input>
@@ -132,7 +133,7 @@ include('koneksi.php');
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <script src="javascript/script.js"></script>
 </body>
 
 </html>

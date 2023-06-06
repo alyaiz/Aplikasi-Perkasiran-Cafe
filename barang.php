@@ -49,16 +49,18 @@
     </div>
     <section>
       <h1>Data Barang</h1>
-      <div>
+      <div class="table-container">
         <table style="width: 80%; text-align:center">
-          <tr>
-            <th>No</th>
-            <th>ID Barang</th>
-            <th>Nama Barang</th>
-            <th>Jumlah Stock</th>
-            <th>Harga</th>
-            <th>Edit</th>
-          </tr>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>ID Barang</th>
+              <th>Nama Barang</th>
+              <th>Jumlah Stock</th>
+              <th>Harga</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
           <?php $i = 1; ?>
           <?php while ($row = mysqli_fetch_assoc($result)) : ?>
 

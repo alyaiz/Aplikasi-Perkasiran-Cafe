@@ -13,7 +13,7 @@
 
 <body>
   <?php
-  $conn = mysqli_connect("localhost", "root", "", "cafecash");
+  $conn = mysqli_connect("localhost", "root", "", "login");
   $result = mysqli_query($conn, "SELECT * FROM transaksi");
   ?>
   <main>
@@ -47,20 +47,11 @@
       </ul>
     </div>
     <section>
-      <br /><br /><br /><br /><br /><br />
-      <table>
-        <tr>
-          <a href="tambah_barang.php">
-            <h2>Tambah Data Barang</h2>
-          </a>
-          <a href="tambah_supplier.php">
-            <h2>Tambah Data Supplier</h2>
-          </a>
-          <a href="tambah_transaksi.php">
-            <h2>Tambah Data Transaksi</h2>
-          </a>
-        </tr>
-      </table>
+      <div class="button-container">
+        <a class="button" href="tambah_barang.php"><i class="fas fa-dolly-flatbed icon"></i><span class="moving-text">Tambah Data Barang</span></a>
+        <a class="button" href="tambah_supplier.php"><i class="fas fa-truck icon"></i><span class="moving-text">Tambah Data Supplier</span></a>
+        <a class="button" href="tambah_transaksi.php"><i class="fas fa-donate icon"></i><span class="moving-text">Tambah Data Transaksi</span></a>
+      </div>
     </section>
   </main>
 </body>
