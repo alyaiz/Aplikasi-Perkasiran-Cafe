@@ -13,9 +13,14 @@
 
 <body>
   <?php
-  $conn = mysqli_connect("localhost", "root", "", "cafecash");
+  require_once 'koneksi.php';
   $result = mysqli_query($conn, "SELECT * FROM barang");
   session_start();
+  $order = isset($_GET['order']) ? $_GET['order'] : 'asc';
+  $sort = isset($_GET['sort']) ? $_GET['sort'] : 'id_barang';
+
+  $result = mysqli_query($conn, "SELECT * FROM barang ORDER BY $sort $order");
+
   ?>
   <main>
     <input type="checkbox" id="check" />
@@ -54,10 +59,10 @@
           <thead>
             <tr>
               <th>No</th>
-              <th>ID Barang</th>
-              <th>Nama Barang</th>
-              <th>Jumlah Stock</th>
-              <th>Harga</th>
+              <th><a href="?sort=id_barang&order=<?php echo ($order == 'asc' && $sort == 'id_barang') ? 'desc' : 'asc'; ?>">ID Barang</a></th>
+              <th><a href="?sort=nama_barang&order=<?php echo ($order == 'asc' && $sort == 'nama_barang') ? 'desc' : 'asc'; ?>">Nama Barang</a></th>
+              <th><a href="?sort=jumlah_barang&order=<?php echo ($order == 'asc' && $sort == 'jumlah_barang') ? 'desc' : 'asc'; ?>">Jumlah Stok</a></th>
+              <th><a href="?sort=harga_barang&order=<?php echo ($order == 'asc' && $sort == 'harga_barang') ? 'desc' : 'asc'; ?>">Harga</a></th>
               <th>Edit</th>
             </tr>
           </thead>

@@ -13,8 +13,13 @@
 
 <body>
   <?php
-  $conn = mysqli_connect("localhost", "root", "", "cafecash");
+  require_once 'koneksi.php';
   $result = mysqli_query($conn, "SELECT * FROM supplier");
+  session_start();
+  $order = isset($_GET['order']) ? $_GET['order'] : 'asc';
+  $sort = isset($_GET['sort']) ? $_GET['sort'] : 'id_supplier';
+
+  $result = mysqli_query($conn, "SELECT * FROM supplier ORDER BY $sort $order");
   ?>
   <main>
     <input type="checkbox" id="check" />
@@ -53,8 +58,8 @@
           <thead>
             <tr>
               <th>No</th>
-              <th>ID Supplier</th>
-              <th>Nama Supplier</th>
+              <th><a href="?sort=id_supplier&order=<?php echo ($order == 'asc' && $sort == 'id_supplier') ? 'desc' : 'asc'; ?>">ID Supplier</a></th>
+              <th><a href="?sort=nama_supplier&order=<?php echo ($order == 'asc' && $sort == 'nama_supplier') ? 'desc' : 'asc'; ?>">ID Supplier</a></th>
               <th>Alamat</th>
               <th>Keterangan Supplier</th>
               <th>Edit</th>

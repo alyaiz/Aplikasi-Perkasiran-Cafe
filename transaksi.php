@@ -13,8 +13,23 @@
 
 <body>
   <?php
-  $conn = mysqli_connect("localhost", "root", "", "cafecash");
+  require_once 'koneksi.php';
   $result = mysqli_query($conn, "SELECT * FROM transaksi");
+  session_start();
+  $order = isset($_GET['order']) ? $_GET['order'] : 'asc';
+  $sort = isset($_GET['sort']) ? $_GET['sort'] : 'id_transaksi';
+  $result = mysqli_query($conn, "SELECT * FROM transaksi ORDER BY $sort $order");
+
+  // Query untuk mengambil data transaksi
+  $order = isset($_GET['order']) ? $_GET['order'] : 'asc';
+  $sort = isset($_GET['sort']) ? $_GET['sort'] : 'id_transaksi';
+  $result = mysqli_query($conn, "SELECT * FROM transaksi ORDER BY $sort $order");
+
+  // Query untuk menghitung total transaksi
+  $totalResult = mysqli_query($conn, "SELECT SUM(Harga) AS Total FROM transaksi");
+  $totalRow = mysqli_fetch_assoc($totalResult);
+  $totalTransaksi = $totalRow['Total'];
+
   ?>
   <main>
     <input type="checkbox" id="check" />
@@ -53,9 +68,9 @@
           <thead>
             <tr>
               <th>No</th>
-              <th>ID Transaksi</th>
-              <th>Nama Barang</th>
-              <th>Harga</th>
+              <th><a href="?sort=id_transaksi&order=<?php echo ($order == 'asc' && $sort == 'id_transaksi') ? 'desc' : 'asc'; ?>">ID Transaksi</a></th>
+              <th><a href="?sort=nama_barang&order=<?php echo ($order == 'asc' && $sort == 'nama_barang') ? 'desc' : 'asc'; ?>">Nama Barang</a></th>
+              <th><a href="?sort=harga&order=<?php echo ($order == 'asc' && $sort == 'harga') ? 'desc' : 'asc'; ?>">Harga</a></th>
               <th>Edit</th>
             </tr>
           </thead>
@@ -75,6 +90,7 @@
           <?php endwhile; ?>
         </table>
       </div>
+      <p>Total Transaksi: <?php echo number_format((string)$totalTransaksi, 0, ",", ".") ?></p>
     </section>
   </main>
 </body>

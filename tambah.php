@@ -13,7 +13,7 @@
 
 <body>
   <?php
-  $conn = mysqli_connect("localhost", "root", "", "login");
+  require_once 'koneksi.php';
   $result = mysqli_query($conn, "SELECT * FROM transaksi");
   ?>
   <main>
