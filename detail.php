@@ -14,6 +14,7 @@ if (!isset($_GET['id_order'])) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/tabel.css" />
+  <link rel="icon" type="image/png" href="img/logokopi.png">
   <title>CAFE CASH</title>
 </head>
 

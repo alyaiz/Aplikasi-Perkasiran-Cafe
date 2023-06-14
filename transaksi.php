@@ -9,6 +9,7 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <link rel="stylesheet" href="css/menuadmin.css" />
+  <link rel="icon" type="image/png" href="img/logokopi.png">
 </head>
 
 <body>

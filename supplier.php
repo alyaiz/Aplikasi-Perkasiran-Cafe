@@ -9,6 +9,7 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <link rel="stylesheet" href="css/menuadmin.css" />
+  <link rel="icon" type="image/png" href="img/logokopi.png">
 </head>
 
 <body>
@@ -59,7 +60,7 @@
             <tr>
               <th>No</th>
               <th><a href="?sort=id_supplier&order=<?php echo ($order == 'asc' && $sort == 'id_supplier') ? 'desc' : 'asc'; ?>">ID Supplier</a></th>
-              <th><a href="?sort=nama_supplier&order=<?php echo ($order == 'asc' && $sort == 'nama_supplier') ? 'desc' : 'asc'; ?>">ID Supplier</a></th>
+              <th><a href="?sort=nama_supplier&order=<?php echo ($order == 'asc' && $sort == 'nama_supplier') ? 'desc' : 'asc'; ?>">Nama Supplier</a></th>
               <th>Alamat</th>
               <th>Keterangan Supplier</th>
               <th>Edit</th>
